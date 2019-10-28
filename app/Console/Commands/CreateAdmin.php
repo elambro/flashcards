@@ -35,6 +35,6 @@ class CreateAdmin extends Command {
 	 * @return mixed
 	 */
 	public function handle() {
-		CreateAdminJob::dispatch('erinlambro@gmail.com');
+		CreateAdminJob::dispatch(config('auth.superuser'));
 	}
 }
