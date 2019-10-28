@@ -1,0 +1,32 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.form-horizontal .form-group,
+.form-group.row { 
+    display: flex; 
+}
+
+
+//@todo - How can we use a bootstrap var for the breakpoint here?
+@media all and (max-width:576px) {
+   .btn-block-sm { width: 100%; display:block; }
+
+   .py-sm-4 {
+        padding-bottom: 1.5rem !important; // @extend .py-4
+   }
+
+   .container-fluid {
+        padding-right: 5px;
+        padding-left: 5px;
+   }
+
+   .card-body {
+        padding: 0.5rem;
+   }
+} 

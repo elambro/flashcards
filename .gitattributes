@@ -1,0 +1,11 @@
+* text=auto
+*.css linguist-vendored
+*.scss linguist-vendored
+*.js linguist-vendored
+CHANGELOG.md export-ignore
+public/css/app.css -diff
+public/js/app.js -diff
+composer.lock -diff
+public/vendor/nova/app.css -diff
+public/vendor/nova/app.js -diff
+nova-components/*/dist/** -diff
