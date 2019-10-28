@@ -3,7 +3,7 @@ A small app for practicing vocabulary and grammar in new languages built on Lara
 
 ## Installation
 - Clone the repository
-- Save a Google Cloud key file for access to translations and text to speech
+- Save a Google Cloud key file for access to translations and text to speech. See [https://cloud.google.com/iam/docs/creating-managing-service-account-keys]
 - `cp .env.example .env`
 - Complete the .env file
 - `composer install`
