@@ -4,6 +4,7 @@ namespace App\Nova;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
+use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
@@ -45,6 +46,7 @@ class Category extends Resource {
 			Text::make('Name')->sortable(),
 			BelongsTo::make('Parent', 'parent', 'App\Nova\Category')->sortable()->nullable(),
 			HasMany::make('Children', 'children', 'App\Nova\Category'),
+			BelongsToMany::make('Cards'),
 		];
 	}
 
