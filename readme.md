@@ -11,7 +11,11 @@ A small app for practicing vocabulary and grammar in new languages built on Lara
 - `php artisan config:cache`
 - `php artisan route:cache`
 - `php artisan storage:link`
+- `php artisan superuser` - Creates the super user with password 'secret'
+
+# For Dev
 - `npm install`
+- `npm run dev`
 
 ## Nova
 I used Nova for the admin dashboard. Either add Nova to the project (if you have access to it) or remove it from the composer.json requirements.
